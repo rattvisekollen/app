@@ -19,4 +19,4 @@ grunt serve
 ```
 
 ## How it works
-This is a purely static, single page app. `grunt` merely serves the static templates used for rendering, while the data presented is fetched from the API found in the [api](https://github.com/rattvisekollen/api) project.
+This is a purely static, single page app. `grunt` merely serves the static templates used for rendering, while the data presented is fetched from the API found in the [api](https://github.com/rattvisekollen/api) project. You must thus have the API running locally during development.
