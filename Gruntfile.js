@@ -58,7 +58,7 @@ module.exports = function (grunt) {
         constants: {
           ENV: {
             name: 'production',
-            API_ENDPOINT: 'http://rattvisekollen-api.elasticbeanstalk.com'
+            API_ENDPOINT: process.env.API_ENDPOINT
           }
         }
       }
