@@ -1,7 +1,7 @@
 "use strict";
 
 angular.module("appApp").controller("ProductsCtrl", function ($scope, $http, ENV) {
-  var apiEndpoint = ENV.API_ENDPOINT || "http://localhost:3000";
+  var apiEndpoint = ENV.API_ENDPOINT;
 
   $scope.currentPage = 1;
   $scope.itemsPerPage = 20;
