@@ -13,18 +13,14 @@ angular.module("appApp").controller("ProductsCtrl", function ($scope, $http, ENV
     });
 
   $scope.setProducts = function (offset, limit) {
-    console.log("Setting products " + offset + " " + limit);
     $http
       .get(apiEndpoint + "/products?offset=" + offset +"&limit=" + limit)
       .then(function (res) {
-        console.log("Products set");
-        console.log(res.data);
         $scope.products = res.data;
       });
   };
 
   $scope.pageChanged = function () {
-    console.log("Page changed");
     $scope.setProducts(($scope.currentPage - 1) * $scope.itemsPerPage, $scope.itemsPerPage);
   };
 
